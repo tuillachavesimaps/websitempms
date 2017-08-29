@@ -38,8 +38,8 @@
 	<span class="v-menubar-menuitem v-menubar-menuitem-menu-pessoa">
 		<span class="v-menubar-submenu-indicator">►</span>
 		<span  class="v-menubar-menuitem-caption">
-			<img id="imagem" class="v-icon" >
-			<span id="nomeUsuario">Bem vindo, </span>
+			<img id="imagem" class="v-icon" src="./SIMP_files/f978.jpg">
+			<span id="nomeUsuario">Bem vindo, Frederick</span>
 		</span>
 	</span>
   </div>
@@ -212,8 +212,8 @@
 	<div class="v-panel-content v-scrollable" tabindex="-1" style="position: relative;">
 		<div class="v-verticallayout v-layout v-vertical v-widget v-has-width v-margin-top v-margin-right v-margin-bottom v-margin-left" style="width: 100%;">
 			<div class="v-slot">
-				<div class="v-verticallayout v-layout v-vertical v-widget v-has-width v-margin-top v-margin-right v-margin-bottom v-margin-left" style="width: 100%;">
-					<div class="v-spacing"></div>
+				<div class="v-verticallayout v-layout  v-widget v-has-width  v-margin-right v-margin-bottom v-margin-left" style="width: 100%;">
+					
 					<div class="v-slot v-slot-others">
 						
 						<div>
@@ -230,7 +230,7 @@
 						</div>
 						</br>
 						<div class="v-link v-widget others v-link-others">
-							<a href="http://201.30.92.112/qlikview/index.htm" target="_blank">
+							<a href="http://qv.imaps.com.br/qlikview/login.htm" target="_blank">
 								<img id="imgQlik"></img>
 								<span id="qlik"><b></b></span>
 							</a>
@@ -281,7 +281,7 @@ function getName() {
 	}
 	else {
 		document.getElementById("demo").innerHTML = "Clique aqui e saiba mais";
-		if (userTemp == "user1"){
+		if (userTemp == "paulozeni"){
 			var x = document.getElementById("imgQlik");
 			x.setAttribute("src", "./SIMP_files/Qlik.png");
 			x.setAttribute("width", "20px");
@@ -299,14 +299,14 @@ function openWindow() {
 	
 	var userReport = localStorage.getItem("user");
 	
-	if (userReport == "user1") {
-			window.open("SSPRS_RelatorioHTML.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1300,height=600");
+	if (userReport == "paulozeni") {
+			window.open("./SIMP_files/Rel_Geral_paulozeni.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1300,height=600");
 		}
-		else if (userReport == "user2") {
-			window.open("TCERS_RelatorioHTML.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1300,height=600");
+		else if (userReport == "myriansilva") {
+			window.open("./SIMP_files/Rel_Geral_myriansilva.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1300,height=600");
 		}
-		else if (userReport == "user3") {
-			window.open("TRT4_RelatorioHTML.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1300,height=600");
+		else if (userReport == "pauloishikawa") {
+			window.open("./SIMP_files/Rel_Geral_pauloishikawa.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1300,height=600");
 		}
 		else{
 			document.getElementById("demo").innerHTML = "Nenhum relatório Qlik disponível para você.";	
@@ -323,14 +323,11 @@ function getKPI() {
 	
 	
 			var x = document.getElementById("KPIInicial1");
-			x.setAttribute("src", "./SIMP_files/"+userReport+".jpg");
+			x.setAttribute("src", "./SIMP_files/Rel_Ind_"+userReport+"_files/Rel_Ind_"+userReport+"_Image_1.png");
 			x.setAttribute("width", "50%");
 			x.setAttribute("height", "50%");
 			
-			var x = document.getElementById("KPIInicial2");
-			x.setAttribute("src", "./SSPRS_RelatorioHTML_files/ssp2.png");
-			x.setAttribute("width", "50%");
-			x.setAttribute("height", "50%");
+			
 	
 	/*	if (userReport == "user1") {	
 		
