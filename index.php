@@ -1,4 +1,4 @@
 
 <?php
-include("../simp/Sistema Integrado do Ministério Público - Login.htm");
+include("websitempms/simp/Sistema Integrado do Ministério Público - Login.htm");
 ?>
